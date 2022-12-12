@@ -1,1 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="project1.css">
+        <title>Magic Library</title> 
+        
+
+    </head>
+    <body>
+        <!--This is the body of our website -->
+
+        <!-- Landing Page Section -->
+        
+        <div id="LandingPage"> 
+                <!-- start Hero Section -->
+            <div id="HeroSection">
+                <p id="heroText">Awaken the <span id="game">Book worm</span> in you!!!
+
+                </p>
+                <p id="heroDescription">The shelves are all booked up!
+                
+                </p>
+                <p id="ctaHelper">Looking for more interesting books! </p>
+                <button id="CTA" onClick="window.location.href = 'https://openlibrary.org/'">'LOOK OUT'</button>
+            </div>
+            <!-- End of Hero Section  -->
+
+                
+            <!-- Image section  -->
+            <div id="ImageSection"> </div>
+             <!-- End of Image Section -->
+        </div>
+            <!-- end of landing page -->
+
+            <!-- JS file is tagged at the end of HTML file -->
+            <script src="scripts.js"> </script>
+    </body>
+</html>
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --stdMargin:3rem;
+}
+
+body{
+    background-color:black;
+}
+
+#LandingPage{
+    margin:5rem;
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+/* Hero section */ 
+#HeroSection{
+    margin:auto 0;
+    color:white;
+    grid-column: 1/4;
+
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#heroText{
+    font-family:'Space Grotesk';
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: capitalize; 
+}
+
+#heroDescription{
+    font-family: 'Roboto';
+    font-weight:400;
+    font-size: 1rem;
+    color:gray;
+    text-transform: capitalize;
+}
+#ctaHelper{
+    margin-top: 2rem;
+    font-family: 'Roboto';
+    font-weight:400;
+    font-size: 0.8rem;
+    color:rgb(164, 151, 180);
+}
+
+#CTA{
+    width: 100%;
+    padding:12px 30px;
+    background:rgb(36, 241, 183);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+
+}
+/* hero section end */
+
+#GameTitle{
+    grid-column-end: -1;
+    color:rgba(255, 255, 255, 0.756);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    z-index: 2;
+    text-align: right;
+    margin:auto 0;
+    position: relative;
+    top:20%;
+}
+
+#ImageSection{
+    grid-row: 1;
+}
+
+#ImageSection{
+    height: 100vh;
+    grid-column: 4 / -1;
+    background-image:linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url("https://www.classvr.com/wp-content/uploads/Literacy-book.jpg");
+    background-size: cover;
+    position: relative;
+    right:calc(-1.55* var(--stdMargin));
+}
+
+#game{
+    color:transparent;
+    background-image:linear-gradient(270.44deg, #253bff 43.56%, rgb(41, 227, 205) 59.93%, rgba(73%, 32%, 0%, 4%) 121.43%);
+    -webkit-background-clip: text;
+    background-size: 400% 400%;
+    
+}
+
+#Header1{
+    color: rgb(255, 255, 255);
+}
+project1.css
 
